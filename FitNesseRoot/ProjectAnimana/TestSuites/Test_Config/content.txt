@@ -1,0 +1,7 @@
+!define url {https://dev.animana.com}
+!define browser {firefox}
+!define driverpath {c:\\software\\firefoxdriver\\geckodriver.exe}
+!define sauce.user {idexx_animana}
+!define sauce.accesskey {cac6a8e5-92ba-44ad-85bf-e8c380414712}
+!define S_BROWSER {chrome}
+!define S_PLATFORM {Windows 7}

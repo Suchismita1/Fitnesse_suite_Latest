@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestOnIE">
+  <parameter name="Browser" value="safari"/>
+  <parameter name="envType" value="remote" />
+  <parameter name="password" value="123@YesWeCan" />
+  <parameter name="userName" value="e2e0" />
+  <parameter name="location" value="Second location" />
+  <parameter name="SearchOption" value="client" />
+  
+    <classes>
+      <class name="com.animana.scenario.Animana"/>
+    </classes>
+  </test> 
+ 
+ <!--   <test name="TestOnChrome">
+  <parameter name="Browser" value="ie"/>
+  <parameter name="envType" value="remote" />
+    <classes>
+      <class name="com.animana.scenario.Animana"/>
+    </classes>
+  </test>
+  <test name="TestOnfirefox">
+  <parameter name="Browser" value="firefox"/>
+  <parameter name="envType" value="remote" />
+    <classes>
+      <class name="com.animana.scenario.Animana"/>
+    </classes>
+  </test>-->
+</suite> <!-- Suite -->

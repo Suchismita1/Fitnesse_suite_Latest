@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50987" started-at="2017-01-25T05:40:08Z" finished-at="2017-01-25T05:40:59Z">
+    <groups>
+    </groups>
+    <test name="TestOnIE" duration-ms="50987" started-at="2017-01-25T05:40:08Z" finished-at="2017-01-25T05:40:59Z">
+      <class name="com.animana.scenario.Animana">
+        <test-method status="PASS" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:com.animana.scenario.Animana@23e028a9]" name="setupDriver" is-config="true" duration-ms="12279" started-at="2017-01-25T11:10:08Z" finished-at="2017-01-25T11:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.animana.scenario.Animana@23e028a9]" name="login" duration-ms="11477" started-at="2017-01-25T11:10:21Z" finished-at="2017-01-25T11:10:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[e2e0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123@YesWeCan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="selectLocation(java.lang.String)[pri:0, instance:com.animana.scenario.Animana@23e028a9]" name="selectLocation" duration-ms="1322" started-at="2017-01-25T11:10:32Z" finished-at="2017-01-25T11:10:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Second location]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLocation -->
+        <test-method status="PASS" signature="searchWithOption(java.lang.String)[pri:0, instance:com.animana.scenario.Animana@23e028a9]" name="searchWithOption" duration-ms="20964" started-at="2017-01-25T11:10:33Z" finished-at="2017-01-25T11:10:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[client]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithOption -->
+        <test-method status="PASS" signature="tearDown(java.lang.String)[pri:0, instance:com.animana.scenario.Animana@23e028a9]" name="tearDown" is-config="true" duration-ms="4934" started-at="2017-01-25T11:10:54Z" finished-at="2017-01-25T11:10:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.animana.scenario.Animana -->
+    </test> <!-- TestOnIE -->
+  </suite> <!-- Suite -->
+</testng-results>

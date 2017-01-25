@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="SearchOption" value="client"/>
+  <parameter name="password" value="123@YesWeCan"/>
+  <parameter name="envType" value="local"/>
+  <parameter name="location" value="Second location"/>
+  <parameter name="userName" value="e2e0"/>
+  <parameter name="Browser" value="chrome"/>
+  <test name="TestOnIE(failed)">
+    <parameter name="SearchOption" value="client"/>
+    <parameter name="password" value="123@YesWeCan"/>
+    <parameter name="envType" value="local"/>
+    <parameter name="location" value="Second location"/>
+    <parameter name="userName" value="e2e0"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.animana.scenario.Animana">
+        <methods>
+          <include name="searchWithOption" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- com.animana.scenario.Animana -->
+    </classes>
+  </test> <!-- TestOnIE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
