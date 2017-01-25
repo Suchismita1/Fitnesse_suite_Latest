@@ -7,5 +7,6 @@ public class DefaultWebDriverSupplier {
 		this.browser = browser;
 		
 	}
+	
 
 }
