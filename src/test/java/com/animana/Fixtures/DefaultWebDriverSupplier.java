@@ -25,6 +25,8 @@ public class DefaultWebDriverSupplier {
 	public static String remoteMobileDevice;
 	public static String remoteMobilePlatform;
 	
+	RemoteBrowserManager remoteBrowser = new RemoteBrowserManager();
+	
 	
 	public void setBrowser(String browser) {
 		this.browser = browser;
@@ -68,14 +70,18 @@ public class DefaultWebDriverSupplier {
 	}
 	
 	public WebDriver newRemoteWebDriver() throws MalformedURLException{
-		RemoteBrowserManager.initializeRemoteDriver(sauceBrowser,saucePlatform);
-		driver = RemoteBrowserManager.getRemoteDriver();
+		//RemoteBrowserManager.initializeRemoteDriver(sauceBrowser,saucePlatform);
+		//driver = RemoteBrowserManager.getRemoteDriver();
+		remoteBrowser.RemoteWebDriverSupplier(browser);
+		driver = remoteBrowser.get();
 		return driver;
 	}
 	
 	public WebDriver newDevWebDriver() throws MalformedURLException{
-		RemoteBrowserManager.initializeRemoteDriver(devBrowser,devPlatform);
-		driver = RemoteBrowserManager.getRemoteDriver();
+		//RemoteBrowserManager.initializeRemoteDriver(devBrowser,devPlatform);
+		//driver = RemoteBrowserManager.getRemoteDriver();
+		remoteBrowser.RemoteWebDriverSupplier(browser);
+		driver = remoteBrowser.get();
 		return driver;
 	}
 	

@@ -29,6 +29,9 @@ public class SeleniumDriverFixture {
 		driver.get("https://dev.animana.com");
 	}
 	
+	public void startMobileDriverOnUrl(WebDriver driver, String url) throws Exception{
+		driver.get("https://dev.animana.com");
+	}
 	public void stopBrowser(){
 		defaultWebDriverSupplier.stopBrowser();
 		//LocalBrowserManager.closeLocalDriver();
