@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.LoginTest</rootPath>
+    <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_111\bin\java" -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -cp C:\Users\Suchismita_Ghadei\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;D:\Fitnesse-suite-master\target\test-classes fitnesse.slim.SlimService 8090</command>
+    <exitCode>1</exitCode>
+    <stdOut>FATAL ERROR in native method: JDWP No transports initialized, jvmtiError=AGENT_ERROR_TRANSPORT_INIT(197)
+</stdOut>
+    <stdErr>ERROR: transport error 202: bind failed: Permission denied
+ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
+JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]
+</stdErr>
+    <exception>Error SLiM server died before a connection could be established. JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1062</totalRunTimeInMillis>
+</testResults>
+

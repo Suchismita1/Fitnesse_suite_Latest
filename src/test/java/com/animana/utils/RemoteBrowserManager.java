@@ -17,50 +17,39 @@ public class RemoteBrowserManager {
 		public static final String URL ="https://"+username+":"+accesskey+"@ondemand.saucelabs.com:443/wd/hub";
 
 		
-		public static void initializeRemoteDriver(String myBrowser) throws MalformedURLException{
+		public static void initializeRemoteDriver(String myBrowser, String saucePlatform) throws MalformedURLException{
 			RemoteWebDriver driver = null;
 			
 			if(myBrowser.equalsIgnoreCase("chrome")){
 				DesiredCapabilities capability = new DesiredCapabilities().chrome();
-				capability.setCapability("platform", "Windows 7");
+				capability.setCapability("platform", saucePlatform);
+				//capability.setCapability("platform", "Windows 7");
 				capability.setCapability("version", "53.0");
 				driver = new RemoteWebDriver(new URL(URL),capability);
-				
-				//Code used to run in Selenium Grid
-				//capability.setBrowserName("chrome");
-				//capability.setVersion("55.0.2883.87");
-				//capability.setPlatform(Platform.WINDOWS);
-				//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
+								
 			}
 			
 			else if(myBrowser.equalsIgnoreCase("firefox")){
 				DesiredCapabilities capability = new DesiredCapabilities().firefox();
-				capability.setCapability("platform", "Windows 7");
+				capability.setCapability("platform", saucePlatform);
+				//capability.setCapability("platform", "Windows 7");
 				capability.setCapability("version", "50.0");
 				driver = new RemoteWebDriver(new URL(URL),capability);
 				
-				//Code used to run in Selenium Grid
-				/*capability.setBrowserName("firefox");
-				capability.setVersion("ANY");
-				capability.setPlatform(Platform.WINDOWS);
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);*/
 			}
 			
 			else if(myBrowser.equalsIgnoreCase("ie")){
 				DesiredCapabilities capability =new DesiredCapabilities().internetExplorer();
-				capability.setCapability("platform", "Windows 7");
+				capability.setCapability("platform", saucePlatform);
+				//capability.setCapability("platform", "Windows 7");
 				capability.setCapability("version", "11.0");
 				driver = new RemoteWebDriver(new URL(URL),capability);
-				
-				//Code used to run in Selenium Grid
-				/*capability.setBrowserName("ie");
-				capability.setVersion("ANY");
-				capability.setPlatform(Platform.WINDOWS);
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);*/
+								
 			}
 			else if(myBrowser.equalsIgnoreCase("safari")){
 				DesiredCapabilities capability =new DesiredCapabilities().safari();
-				capability.setCapability("platform", "Windows 7");
+				capability.setCapability("platform", saucePlatform);
+				//capability.setCapability("platform", "Windows 7");
 				capability.setCapability("version", "5.1");
 				driver = new RemoteWebDriver(new URL(URL),capability);
 			}

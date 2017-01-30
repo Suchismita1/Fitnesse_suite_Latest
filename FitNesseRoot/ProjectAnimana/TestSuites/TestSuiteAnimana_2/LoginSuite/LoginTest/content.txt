@@ -1,0 +1,4 @@
+!include -c <TestSuites.Testdata
+
+|script|
+|start application|

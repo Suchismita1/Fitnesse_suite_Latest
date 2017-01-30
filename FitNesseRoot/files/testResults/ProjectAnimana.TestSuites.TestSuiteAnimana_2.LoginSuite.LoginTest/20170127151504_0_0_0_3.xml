@@ -1,0 +1,930 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.LoginTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>4</exceptions>
+    </counts>
+    <date>2017-01-27T15:15:05+05:30</date>
+    <runTimeInMillis>40</runTimeInMillis>
+    <content></content>
+    <relativePageName>SuiteSetUp</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_4_0', instruction='import', path='com.animana.Fixtures'}</instruction>
+        <slimResult>pass(com.animana.Fixtures)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_4_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.animana.Fixtures</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_4_1', instruction='import', path='com.animana.utils'}</instruction>
+        <slimResult>pass(com.animana.utils)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_4_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.animana.utils</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_5_0', instruction='make', instanceName='library1', className='DefaultWebDriverSupplier', args=[]}</instruction>
+        <slimResult>pass(default web driver supplier)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_5_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>default web driver supplier</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_5_1', instruction='make', instanceName='library2', className='SeleniumDriverFixture', args=[]}</instruction>
+        <slimResult>pass(selenium driver fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>library_5_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>selenium driver fixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0/scriptTable_2_0', instruction='call', instanceName='scriptTableActor', methodName='setBrowser', args=[firefox]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_0/scriptTable_2_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0/scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='setPath', args=[c:\\software\\firefoxdriver\\geckodriver.exe]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_0/scriptTable_2_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0/scriptTable_2_2', instruction='callAndAssign', symbolName='webDriver', instanceName='scriptTableActor', methodName='newWebDriver', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_0/scriptTable_2_2</instructionId>
+                              <type>SymbolAssignmentExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0/scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='startDriverOnUrl', args=[$webDriver, &lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_0/scriptTable_2_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2017-01-27T15:15:05+05:30</date>
+    <runTimeInMillis>14</runTimeInMillis>
+    <content></content>
+    <relativePageName>LoginTest</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='library_4_0', instruction='make', instanceName='library1', className='AnimanaFixture', args=[$webDriver]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>library_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='call', instanceName='scriptTableActor', methodName='startApplication', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2017-01-27T15:15:05+05:30</date>
+    <runTimeInMillis>10</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary"&gt;.ProjectAnimana.TestSuites.ScenarioLibrary&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.Test_Config"&gt;Test_Config&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.Test_Config?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;variable defined: url=https://dev.animana.com&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: browser=firefox&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: driverpath=c:\\software\\firefoxdriver\\geckodriver.exe&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.user=idexx_animana&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.accesskey=cac6a8e5-92ba-44ad-85bf-e8c380414712&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_BROWSER=chrome&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_PLATFORM=Windows 7&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;startscenarios&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsauce&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "chrome", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdev&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "firefox", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdevlocal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;firefox&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;set path&lt;/td&gt;
+		&lt;td colspan="3"&gt;c:\\software\\firefoxdriver\\geckodriver.exe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsaucemobile&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td&gt;set remote mobile browser&lt;/td&gt;
+		&lt;td colspan="2"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub","appiumVersion": "1.5.3","deviceName":"&lt;span class="meta"&gt;undefined variable: S_DEVICE&lt;/span&gt;", "deviceOrientation":"portrait","browserName":"chrome","platformVersion":"&lt;span class="meta"&gt;undefined variable: S_VERSION&lt;/span&gt;","platformName":"Windows 7"}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;start mobiledriver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.animana.Fixtures&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.animana.utils&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;default web driver supplier&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;selenium driver fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="scenario closed"&gt;
+		&lt;td class="error"&gt;startdevlocal&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="scenario-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdevlocal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;firefox&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set path&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;c:\\software\\firefoxdriver\\geckodriver.exe&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.callAndAssign(StatementExecutor.java:118) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallAndAssignInstruction.executeInternal(CallAndAssignInstruction.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.callAndAssign(StatementExecutor.java:118) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallAndAssignInstruction.executeInternal(CallAndAssignInstruction.java:38) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;start driver&lt;/td&gt;
+		&lt;td class="error"&gt;$webDriver&lt;/td&gt;
+		&lt;td class="error"&gt;on url&lt;/td&gt;
+		&lt;td class="error"&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary"&gt;.ProjectAnimana.TestSuites.ScenarioLibrary&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.Test_Config"&gt;Test_Config&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.Test_Config?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;variable defined: url=https://dev.animana.com&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: browser=firefox&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: driverpath=c:\\software\\firefoxdriver\\geckodriver.exe&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.user=idexx_animana&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.accesskey=cac6a8e5-92ba-44ad-85bf-e8c380414712&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_BROWSER=chrome&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_PLATFORM=Windows 7&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;startscenarios&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsauce&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "chrome", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdev&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "firefox", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdevlocal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;firefox&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;set path&lt;/td&gt;
+		&lt;td colspan="3"&gt;c:\\software\\firefoxdriver\\geckodriver.exe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsaucemobile&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td&gt;set remote mobile browser&lt;/td&gt;
+		&lt;td colspan="2"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub","appiumVersion": "1.5.3","deviceName":"&lt;span class="meta"&gt;undefined variable: S_DEVICE&lt;/span&gt;", "deviceOrientation":"portrait","browserName":"chrome","platformVersion":"&lt;span class="meta"&gt;undefined variable: S_VERSION&lt;/span&gt;","platformName":"Windows 7"}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;start mobiledriver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.SetUp"&gt;.ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.SetUp&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;animana fixture&lt;/td&gt;
+		&lt;td class="error"&gt;$webDriver&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671) [rt.jar:1.8.0_111]
+	at java.lang.Class.getConstructors(Class.java:1651) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:21) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:48) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671) [rt.jar:1.8.0_111]
+	at java.lang.Class.getConstructors(Class.java:1651) [rt.jar:1.8.0_111]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.createInstance(DefaultInteraction.java:21) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimExecutionContext.create(SlimExecutionContext.java:48) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.create(StatementExecutor.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.MakeInstruction.executeInternal(MakeInstruction.java:26) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.Testdata"&gt;&amp;lt;TestSuites.Testdata&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.Testdata?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: user=e2e0&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: pass=123@YesWeCan&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: lastname=admin&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: locationname=Second location&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;start application&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary"&gt;.ProjectAnimana.TestSuites.ScenarioLibrary&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="ProjectAnimana.TestSuites.Test_Config"&gt;Test_Config&lt;/a&gt; &lt;a href="ProjectAnimana.TestSuites.Test_Config?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;span class="meta"&gt;variable defined: url=https://dev.animana.com&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: browser=firefox&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: driverpath=c:\\software\\firefoxdriver\\geckodriver.exe&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.user=idexx_animana&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: sauce.accesskey=cac6a8e5-92ba-44ad-85bf-e8c380414712&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_BROWSER=chrome&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: S_PLATFORM=Windows 7&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;startscenarios&lt;/p&gt;
+	&lt;div&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsauce&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "chrome", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdev&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub", "browserName": "firefox", "platform": "Windows 7" }&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startdevlocal&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td&gt;set browser&lt;/td&gt;
+		&lt;td colspan="3"&gt;firefox&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor3"&gt;
+		&lt;td&gt;set path&lt;/td&gt;
+		&lt;td colspan="3"&gt;c:\\software\\firefoxdriver\\geckodriver.exe&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td colspan="3"&gt;new web driver&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;start driver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;scenario&lt;/td&gt;
+		&lt;td colspan="3"&gt;startsaucemobile&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;$webDriver=&lt;/td&gt;
+		&lt;td&gt;set remote mobile browser&lt;/td&gt;
+		&lt;td colspan="2"&gt;{ "name": "Xebiumtest", "remote": "http://idexx_animana:cac6a8e5-92ba-44ad-85bf-e8c380414712@ondemand.saucelabs.com:80/wd/hub","appiumVersion": "1.5.3","deviceName":"&lt;span class="meta"&gt;undefined variable: S_DEVICE&lt;/span&gt;", "deviceOrientation":"portrait","browserName":"chrome","platformVersion":"&lt;span class="meta"&gt;undefined variable: S_VERSION&lt;/span&gt;","platformName":"Windows 7"}&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;start mobiledriver&lt;/td&gt;
+		&lt;td&gt;$webDriver&lt;/td&gt;
+		&lt;td&gt;on url&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://dev.animana.com"&gt;https://dev.animana.com&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;stop browser&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="1"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) [rt.jar:1.8.0_111]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) [rt.jar:1.8.0_111]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [rt.jar:1.8.0_111]
+	at java.lang.Class.getDeclaredMethods0(Native Method) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701) [rt.jar:1.8.0_111]
+	at java.lang.Class.privateGetPublicMethods(Class.java:2902) [rt.jar:1.8.0_111]
+	at java.lang.Class.getMethods(Class.java:1615) [rt.jar:1.8.0_111]
+	at fitnesse.slim.MethodExecutor.findMatchingMethod(MethodExecutor.java:24) [fitnesse-20151230.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:70) [fitnesse-20151230.jar]
+	at fitnesse.slim.LibraryMethodExecutor.execute(LibraryMethodExecutor.java:18) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135) [fitnesse-20151230.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-20151230.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-20151230.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:154) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:124) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76) [fitnesse-20151230.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-20151230.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SuiteTearDown</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='call', instanceName='scriptTableActor', methodName='stopBrowser', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:\Program Files\Java\jdk1.8.0_111\bin\java" -cp C:\Users\Suchismita_Ghadei\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;D:\Fitnesse-suite-master\target\test-classes fitnesse.slim.SlimService 8091</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>3</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>685</totalRunTimeInMillis>
+</testResults>
+

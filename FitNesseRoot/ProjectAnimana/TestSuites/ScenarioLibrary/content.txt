@@ -3,24 +3,43 @@
 !**> startscenarios
 
 |scenario|startsauce|
-|set browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${S_BROWSER}", "platform": "${S_PLATFORM}" } |
-| $webDriver= | new web driver |
-| start driver |$webDriver| on url | https://dev.animana.com |
+|set sauce browser|${S_BROWSER}|
+|set sauce platform|${S_PLATFORM}|
+| $webDriver= | new remote web driver |
+| start driver |$webDriver| on url | ${url} |
+
+#|scenario|startsauce|
+#|set browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${S_BROWSER}", "platform": "${S_PLATFORM}" } |
+#| $webDriver= | new web driver |
+#| start driver |$webDriver| on url | https://dev.animana.com |
+
+#|scenario|startdev|
+#|set browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${browser}", "platform": "Windows 7" } |
+#| $webDriver= | new web driver |
+#| start driver |$webDriver| on url | https://dev.animana.com |
 
 |scenario|startdev|
-|set browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${browser}", "platform": "Windows 7" } |
-| $webDriver= | new web driver |
+|set dev browser|${D_BROWSER}|
+|set dev platform|Windows 7|
+| $webDriver= | new dev web driver |
 | start driver |$webDriver| on url | https://dev.animana.com |
+
 
 |scenario|startdevlocal|
 |set browser|${browser}|
-|set path|${driverpath}|
 | $webDriver=| new web driver |
 | start driver |$webDriver| on url | https://dev.animana.com |
 
 |scenario|startsaucemobile|
-| $webDriver=|set remote mobile browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub","appiumVersion": "1.5.3","deviceName":"${S_DEVICE}", "deviceOrientation":"portrait","browserName":"${S_BROWSER}","platformVersion":"${S_VERSION}","platformName":"${S_PLATFORM}"}|
-| start mobiledriver |$webDriver| on url | https://dev.animana.com |
+|set remote mobile browser|${M_BROWSER}|
+|set remote mobile device|${M_DEVICE}|
+|set remote mobile platform|${M_PLATFORM}|
+| $webDriver=| new mobile web driver |
+| start driver |$webDriver| on url | https://dev.animana.com |
+
+#|scenario|startsaucemobile|
+#| $webDriver=|set remote mobile browser| { "name": "Xebiumtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub","appiumVersion": "1.5.3","deviceName":"${S_DEVICE}", "deviceOrientation":"portrait","browserName":"${S_BROWSER}","platformVersion":"${S_VERSION}","platformName":"${S_PLATFORM}"}|
+#| start mobiledriver |$webDriver| on url | https://dev.animana.com |
 
 
 ****************!

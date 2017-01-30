@@ -1,7 +1,12 @@
 !define url {https://dev.animana.com}
-!define browser {firefox}
-!define driverpath {c:\\software\\firefoxdriver\\geckodriver.exe}
+!define browser {chrome}
+!define D_BROWSER {firefox}
+#!define driverpath {c:\\software\\firefoxdriver\\geckodriver.exe}
+!define driverpath {D:\\testdriver\\geckodriver.exe}
 !define sauce.user {idexx_animana}
 !define sauce.accesskey {cac6a8e5-92ba-44ad-85bf-e8c380414712}
-!define S_BROWSER {chrome}
+!define S_BROWSER {firefox}
 !define S_PLATFORM {Windows 7}
+!define M_BROWSER {chrome}
+!define M_PLATFORM {Android}
+!define M_DEVICE {Samsung Galaxy S7 Device}

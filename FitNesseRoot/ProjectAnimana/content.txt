@@ -1,0 +1,18 @@
+!1 Welcome to the Animana Fitnesse setup
+
+!3 Press image below to enter the project
+[[!img http://files/images/Animana!.jpg][ProjectAnimana.TestSuites]]
+
+If you want to start using Xebium, the XebiumTemplate might be a good starting point.
+
+
+!contents
+!***> Preset variables
+!define TEST_SYSTEM {slim}
+!define BROWSER {chrome}
+
+!path D:\Fitnesse-suite-master\target\test-classes
+
+#!pomFile pom.xml@runtime
+!pomFile pom.xml@runtime
+***!

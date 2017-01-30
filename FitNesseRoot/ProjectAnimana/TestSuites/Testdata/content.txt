@@ -1,0 +1,5 @@
+!contents -R2 -g -p -f -h
+!define user {e2e0}
+!define pass {123@YesWeCan}
+!define lastname {admin}
+!define locationname {Second location}

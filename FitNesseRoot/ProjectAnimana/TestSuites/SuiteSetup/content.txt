@@ -1,0 +1,17 @@
+!contents -R2 -g -p -f -h
+
+!|import             |
+|com.animana.Fixtures|
+|com.animana.utils   |
+
+|library                    |
+|default web driver supplier|
+|selenium driver fixture    |
+|local browser manager|
+|remote browser manager|
+|appium browser manager|
+
+|script|
+|${startenv}|
+
+

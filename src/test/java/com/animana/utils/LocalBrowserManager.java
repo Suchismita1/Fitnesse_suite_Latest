@@ -9,32 +9,32 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class LocalBrowserManager {
 	public static WebDriver localDriver;
 	
-	public static WebDriver initializeDriver(String browser){
+	
+	public static void initializeDriver(String browser){
 		try{
 		if(browser.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", "D:\\testdriver\\chromedriver.exe");
 			localDriver = new ChromeDriver();
-			return localDriver;
+			//return localDriver;
 		}
 		else if(browser.equalsIgnoreCase("ie")){
 			System.setProperty("webdriver.ie.driver", "D:\\testdriver\\MicrosoftWebDriver.exe");
 			localDriver = new InternetExplorerDriver();
-			return localDriver;
+			//return localDriver;
 		}
 		else if(browser.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver", "D:\\testdriver\\geckodriver.exe");
 			localDriver = new FirefoxDriver();
-			return localDriver;
+			//return localDriver;
 		}}
 		catch(WebDriverException e){
 			System.out.println("illigal browser type");
 			localDriver = startChromeDriver(browser);
 			
 		}
-		return localDriver;
+		//return localDriver;
 		
 	}
-	
 	public static WebDriver startChromeDriver(String browser) {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "D:\\testdriver\\chromedriver.exe");

@@ -1,9 +1,11 @@
 package com.animana.utils;
 
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -15,6 +17,7 @@ public class PageUtils {
 	public static String FILEPATH = "./src/test/resources/Object_Repository.json";
 	public static String PAGE_TITLE = "=== ANIMANA ASP ===";
 	public static String SAUCEDETALPATH = "./src/test/resources/SauceCredentials.properties";
+	public static Properties config;
 	
 	JSONParser parser;
 	JSONObject jsonObject;
@@ -86,6 +89,14 @@ public class PageUtils {
 
 	
 		
+	}
+	
+	public static String  readProperty(String propertyKey) throws IOException{
+		config = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\SauceCredentials.properties");
+		config.load(fis);
+		String propertyValue=config.getProperty(propertyKey);
+		return propertyValue;
 	}
 	
 	
