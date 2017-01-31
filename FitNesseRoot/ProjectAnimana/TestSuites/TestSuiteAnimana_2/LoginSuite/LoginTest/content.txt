@@ -1,4 +1,6 @@
 !include -c <TestSuites.Testdata
 
 |script|
-|start application|
+|login application|$webDriver||${user}||${pass}|
+#|start application|
+

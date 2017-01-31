@@ -13,17 +13,17 @@ public class LocalBrowserManager {
 	public static void initializeDriver(String browser){
 		try{
 		if(browser.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", "D:\\testdriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/testdriver/chromedriver.exe");
 			localDriver = new ChromeDriver();
 			//return localDriver;
 		}
 		else if(browser.equalsIgnoreCase("ie")){
-			System.setProperty("webdriver.ie.driver", "D:\\testdriver\\MicrosoftWebDriver.exe");
+			System.setProperty("webdriver.ie.driver", "./src/test/resources/testdriver/MicrosoftWebDriver.exe");
 			localDriver = new InternetExplorerDriver();
 			//return localDriver;
 		}
 		else if(browser.equalsIgnoreCase("firefox")){
-			System.setProperty("webdriver.gecko.driver", "D:\\testdriver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./src/test/resources/testdriver/geckodriver.exe");
 			localDriver = new FirefoxDriver();
 			//return localDriver;
 		}}

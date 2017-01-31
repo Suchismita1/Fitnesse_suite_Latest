@@ -3,11 +3,13 @@ package com.animana.utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.json.simple.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
@@ -98,6 +100,48 @@ public class PageUtils {
 		String propertyValue=config.getProperty(propertyKey);
 		return propertyValue;
 	}
+	
+	public static void convertJsonString(String element) throws IOException{
+		JSONObject jsonObj = new JSONObject(element);
+
+		for (Object key : jsonObj.keySet()) {
+		String keyStr = (String)key;
+		Object keyvalue = jsonObj.get(keyStr);
+
+		//Print key and value
+		System.out.println("key: "+ keyStr +"  "+" value: " + keyvalue);
+		//updating properties file info
+		PageUtils.readProperty(keyStr);
+		PageUtils.updateProperty(keyStr, keyvalue.toString());
+		}
+		}
+	
+	public static void updateProperty(String key, String value) {
+
+		FileOutputStream output = null;
+
+		try {
+		output = new FileOutputStream(System.getProperty("user.dir")
+		+ "\\src\\test\\resources\\SauceCredentials.properties");
+		// set the properties value
+		config.setProperty(key, value);
+		// save properties to project root folder
+		config.store(output, null);
+		} catch (IOException io) {
+		io.printStackTrace();
+		} finally {
+		if (output != null) {
+		try {
+		output.close();
+		} catch (IOException e) {
+		e.printStackTrace();
+		}
+		}
+		}
+
+		}
+
+
 	
 	
 }

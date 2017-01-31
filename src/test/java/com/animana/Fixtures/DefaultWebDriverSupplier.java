@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.animana.utils.AppiumBrowserManager;
 import com.animana.utils.LocalBrowserManager;
+import com.animana.utils.PageUtils;
 import com.animana.utils.RemoteBrowserManager;
 
 public class DefaultWebDriverSupplier {
@@ -24,9 +25,7 @@ public class DefaultWebDriverSupplier {
 	public static String remoteMobileBrowser;
 	public static String remoteMobileDevice;
 	public static String remoteMobilePlatform;
-	
 	RemoteBrowserManager remoteBrowser = new RemoteBrowserManager();
-	
 	
 	public void setBrowser(String browser) {
 		this.browser = browser;
@@ -69,7 +68,7 @@ public class DefaultWebDriverSupplier {
 		this.remoteMobilePlatform = remoteMobilePlatform;
 	}
 	
-	public WebDriver newRemoteWebDriver() throws MalformedURLException{
+	/*public WebDriver newRemoteWebDriver() throws MalformedURLException{
 		//RemoteBrowserManager.initializeRemoteDriver(sauceBrowser,saucePlatform);
 		//driver = RemoteBrowserManager.getRemoteDriver();
 		remoteBrowser.RemoteWebDriverSupplier(browser);
@@ -83,15 +82,29 @@ public class DefaultWebDriverSupplier {
 		remoteBrowser.RemoteWebDriverSupplier(browser);
 		driver = remoteBrowser.get();
 		return driver;
-	}
+	}*/
 	
 	public WebDriver newWebDriver() throws Exception{
-		
+			
+		if(browser.contains("Sauce")){
+			PageUtils.convertJsonString(browser);
+			String sauceBrowserNew = PageUtils.readProperty("browserName");
+			String saucePlatformNew = PageUtils.readProperty("platform");
+			RemoteBrowserManager.initializeRemoteDriver(sauceBrowserNew,saucePlatformNew);
+			driver = RemoteBrowserManager.getRemoteDriver();
+
+			//remoteBrowser.RemoteWebDriverSupplier(browser);
+			//driver = remoteBrowser.get();
+		}
+		else{
 		LocalBrowserManager.initializeDriver(browser);
 		driver = LocalBrowserManager.getLocalDriver();
+		}
 		return driver;
 		
 	}
+	
+	
 	
 	public WebDriver newMobileWebDriver() throws MalformedURLException{
 		AppiumBrowserManager.initializeAppiumDriver(remoteMobileDevice, remoteMobileBrowser, remoteMobilePlatform);

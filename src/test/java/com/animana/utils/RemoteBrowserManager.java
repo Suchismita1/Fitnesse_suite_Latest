@@ -80,7 +80,6 @@ public class RemoteBrowserManager {
 			return new Augmenter().augment(new RemoteWebDriver(getRemote(), getCapabilities()));
 		}
 
-
 		
 		public static void initializeRemoteDriver(String myBrowser, String saucePlatform) throws MalformedURLException{
 			RemoteWebDriver driver = null;
@@ -103,7 +102,7 @@ public class RemoteBrowserManager {
 				
 			}
 			
-			else if(myBrowser.equalsIgnoreCase("ie")){
+			else if(myBrowser.equalsIgnoreCase("iexplore")){
 				DesiredCapabilities capability =new DesiredCapabilities().internetExplorer();
 				capability.setCapability("platform", saucePlatform);
 				//capability.setCapability("platform", "Windows 7");

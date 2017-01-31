@@ -11,7 +11,7 @@ If you want to start using Xebium, the XebiumTemplate might be a good starting p
 !define TEST_SYSTEM {slim}
 !define BROWSER {chrome}
 
-!path C:\Users\Suchi\git\Fitnesse_suite_Latest\target\test-classes
+!path D:\Fitnesse-suite-master\target\test-classes
 
 #!pomFile pom.xml@runtime
 !pomFile pom.xml@runtime

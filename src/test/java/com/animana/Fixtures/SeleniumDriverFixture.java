@@ -25,6 +25,11 @@ public class SeleniumDriverFixture {
 		defaultWebDriverSupplier.setSauceBrowser(sauceBrowser);
 	}
 	
+	public void startDriver(WebDriver driver, String url) throws Exception{
+		driver.get("https://dev.animana.com");
+	}
+	
+	
 	public void startDriverOnUrl(WebDriver driver, String url) throws Exception{
 		driver.get("https://dev.animana.com");
 	}
@@ -32,6 +37,7 @@ public class SeleniumDriverFixture {
 	public void startMobileDriverOnUrl(WebDriver driver, String url) throws Exception{
 		driver.get("https://dev.animana.com");
 	}
+	
 	public void stopBrowser(){
 		defaultWebDriverSupplier.stopBrowser();
 		//LocalBrowserManager.closeLocalDriver();

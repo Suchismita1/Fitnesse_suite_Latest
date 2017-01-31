@@ -1,7 +1,7 @@
 package com.animana.utils;
 
 import static org.openqa.selenium.remote.CapabilityType.PLATFORM;
-
+import static org.openqa.selenium.remote.CapabilityType.BROWSER_NAME;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -16,6 +16,8 @@ import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import io.appium.java_client.AppiumDriver;
+
 public class AppiumBrowserManager {
 	
 	public static ThreadLocal<RemoteWebDriver> dr = new ThreadLocal<RemoteWebDriver>();
@@ -23,9 +25,10 @@ public class AppiumBrowserManager {
 	public static final String accesskey = "73d74e9a-b405-46a5-bbc0-5fbb8ed0d7d7";
 	public static final String URL ="https://"+username+":"+accesskey+"@ondemand.saucelabs.com:443/wd/hub";
 	private static final String REMOTE = "remote";
-
 	private String remote;
 	private Map<String, String> capabilities;
+	
+	 private static AppiumDriver appiumdriver;
 	
 	public void AppiumBrowserManager(){}
 	
@@ -44,8 +47,10 @@ public class AppiumBrowserManager {
 		} catch (JSONException e) {
 			throw new RuntimeException("Unable to fetch required fields from json string", e);
 		}
+		
+		return appiumdriver = (AppiumDriver) new RemoteWebDriver(getRemote(), getCapabilities());
 	
-	return new Augmenter().augment(new RemoteWebDriver(getRemote(), getCapabilities()));
+	//return new Augmenter().augment(new RemoteWebDriver(getRemote(), getCapabilities()));
 	
 	}
 	
@@ -64,6 +69,11 @@ public class AppiumBrowserManager {
 	    	outMap.put(PLATFORM, platform.toUpperCase());
 	    }
 		
+		/*String browserName = outMap.get(BROWSER_NAME);
+		if(browserName != null){
+			outMap.put(BROWSER_NAME, browserName.toUpperCase());
+		}*/
+		
 		//String devicename = outMap.get(key)
 
 		return  outMap;
@@ -80,7 +90,6 @@ public class AppiumBrowserManager {
 	public Capabilities getCapabilities() {
 		return new DesiredCapabilities(capabilities);
 	}
-    
 	
 	public static void initializeAppiumDriver(String deviceName, String browserName, String platformName) throws MalformedURLException{
 		RemoteWebDriver appium_driver = null;
