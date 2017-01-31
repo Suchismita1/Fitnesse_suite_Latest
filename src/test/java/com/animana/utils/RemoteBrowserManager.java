@@ -2,6 +2,7 @@ package com.animana.utils;
 
 import static org.openqa.selenium.remote.CapabilityType.PLATFORM;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -21,8 +22,10 @@ public class RemoteBrowserManager {
 	
 	//ThreadLocal will keep local copy of the driver
 		public static ThreadLocal<RemoteWebDriver> dr = new ThreadLocal<RemoteWebDriver>();
-		public static final String username = "suchi1";
-		public static final String accesskey = "73d74e9a-b405-46a5-bbc0-5fbb8ed0d7d7";
+		//public static final String username = "suchi1";
+		public static final String username = PageUtils.readProperty("sauce.user");
+		//public static final String accesskey = "73d74e9a-b405-46a5-bbc0-5fbb8ed0d7d7";
+		public static final String accesskey = PageUtils.readProperty("sauce.accesskey");
 		public static final String URL ="https://"+username+":"+accesskey+"@ondemand.saucelabs.com:443/wd/hub";
 		
 		private static final String REMOTE = "remote";
@@ -64,11 +67,12 @@ public class RemoteBrowserManager {
 			return  outMap;
 		}
 		
-		public URL getRemote() {
+		public URL getSauceRemote() throws IOException {
 			try {
+				
 				return new URL(remote);
 			} catch (MalformedURLException e) {
-				throw new RuntimeException("URL '" + remote + "' is not a valid URL");
+				throw new RuntimeException("URL is not a valid URL");
 			}
 		}
 
@@ -76,12 +80,12 @@ public class RemoteBrowserManager {
 			return new DesiredCapabilities(capabilities);
 		}
 		
-		public WebDriver get() {
-			return new Augmenter().augment(new RemoteWebDriver(getRemote(), getCapabilities()));
+		public WebDriver get() throws IOException {
+			return new Augmenter().augment(new RemoteWebDriver(getSauceRemote(), getCapabilities()));
 		}
 
 		
-		public static void initializeRemoteDriver(String myBrowser, String saucePlatform) throws MalformedURLException{
+	/*	public static void initializeRemoteDriver(String myBrowser, String saucePlatform) throws MalformedURLException{
 			RemoteWebDriver driver = null;
 			
 			if(myBrowser.equalsIgnoreCase("chrome")){
@@ -122,9 +126,9 @@ public class RemoteBrowserManager {
 			setRemoteDriver(driver);
 			
 			getRemoteDriver();
-		}
+		}*/
 
-		public static WebDriver getRemoteDriver() {
+		/*public static WebDriver getRemoteDriver() {
 			return dr.get();
 			
 			
@@ -138,7 +142,7 @@ public class RemoteBrowserManager {
 		public static void closeRemoteDriver(){
 			getRemoteDriver().quit();
 			dr.set(null);
-		}
+		}*/
 			
 
 }

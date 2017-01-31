@@ -12,6 +12,7 @@
 |set browser| { "name": "SaucelabTest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${S_BROWSER}", "platform": "${S_PLATFORM}" } |
 | $webDriver= | new web driver |
 | start driver |$webDriver| on url | https://dev.animana.com |
+#|set browser| { "name": "SaucelabTest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${S_BROWSER}", "platform": "${S_PLATFORM}" } |
 
 |scenario|startdev|
 |set browser| { "name": "SauceDevtest", "remote": "!-http://-!${sauce.user}:${sauce.accesskey}@ondemand.saucelabs.com:80/wd/hub", "browserName": "${D_BROWSER}", "platform": "Windows 7" } |

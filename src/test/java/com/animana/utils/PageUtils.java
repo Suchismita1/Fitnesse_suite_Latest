@@ -93,10 +93,29 @@ public class PageUtils {
 		
 	}
 	
-	public static String  readProperty(String propertyKey) throws IOException{
+	/*public static String  readProperty(String propertyKey) throws IOException{
 		config = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\SauceCredentials.properties");
 		config.load(fis);
+		String propertyValue=config.getProperty(propertyKey);
+		return propertyValue;
+	}*/
+	
+	public static String  readProperty(String propertyKey){
+		config = new Properties();
+		FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\SauceCredentials.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			config.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String propertyValue=config.getProperty(propertyKey);
 		return propertyValue;
 	}

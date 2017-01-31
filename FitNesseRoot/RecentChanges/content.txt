@@ -1,10 +1,10 @@
+|ProjectAnimana.TestSuites.SuiteTearDown||23:03:36 Tue, Jan 31, 2017|
+|ProjectAnimana.TestSuites.Test_Config||22:53:04 Tue, Jan 31, 2017|
+|ProjectAnimana.TestSuites.ScenarioLibrary||22:40:26 Tue, Jan 31, 2017|
+|ProjectAnimana||22:00:43 Tue, Jan 31, 2017|
 |ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.LoginTest||19:36:35 Tue, Jan 31, 2017|
 |ProjectAnimana.TestSuites.TestSuiteAnimana_2.LoginSuite.SetUp||19:26:22 Tue, Jan 31, 2017|
-|ProjectAnimana.TestSuites.ScenarioLibrary||19:17:39 Tue, Jan 31, 2017|
 |ProjectAnimana.TestSuites.Testdata||19:16:54 Tue, Jan 31, 2017|
-|ProjectAnimana.TestSuites.Test_Config||18:53:11 Tue, Jan 31, 2017|
 |ProjectAnimana.TestSuites.SuiteSetUp||17:59:13 Tue, Jan 31, 2017|
-|ProjectAnimana||19:18:02 Mon, Jan 30, 2017|
 |ProjectAnimana.TestSuites.SuiteSetup||17:10:59 Mon, Jan 30, 2017|
 |ProjectAnimana.TestSuites||15:56:31 Mon, Jan 30, 2017|
-|ProjectAnimana.TestSuites.SuiteTearDown||12:07:11 Mon, Jan 30, 2017|

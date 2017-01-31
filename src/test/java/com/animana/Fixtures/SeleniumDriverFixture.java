@@ -13,22 +13,9 @@ public class SeleniumDriverFixture {
 		defaultWebDriverSupplier.setBrowser(browser);
 	}
 		
-	public void setPath(String path){
-		defaultWebDriverSupplier.setDriverpath(path);
-	}
-	
 	public void setUrl(String url){
 		this.url = url;
 	}
-	
-	public void setSauceBrowser(String sauceBrowser){
-		defaultWebDriverSupplier.setSauceBrowser(sauceBrowser);
-	}
-	
-	public void startDriver(WebDriver driver, String url) throws Exception{
-		driver.get("https://dev.animana.com");
-	}
-	
 	
 	public void startDriverOnUrl(WebDriver driver, String url) throws Exception{
 		driver.get("https://dev.animana.com");

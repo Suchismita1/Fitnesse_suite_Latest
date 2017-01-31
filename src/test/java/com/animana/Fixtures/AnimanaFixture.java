@@ -15,7 +15,7 @@ import com.animana.utils.PageUtils;
 
 public class AnimanaFixture {
 	private boolean acceptNextAlert = true;
-	  private StringBuffer verificationErrors = new StringBuffer();
+	private StringBuffer verificationErrors = new StringBuffer();
 	private final WebDriver webDriver;
 	public static String user;
 	public static String password;
@@ -36,7 +36,7 @@ public class AnimanaFixture {
 		this.password = password;
 	}
 	
-	public void loginApplication(WebDriver driver, String username,String pwd) throws Exception
+	public void loginApplication(WebDriver driver, String user ,String password) throws Exception
 	{
 		try{
 		WebElement username_textbox = driver.findElement(By.id("username"));
@@ -51,6 +51,9 @@ public class AnimanaFixture {
 		{
 			System.out.println("Login page is not loaded correctly");
 		}
+		
+		Thread.sleep(3000);
+		driver.quit();
 		/*try {
 			homePage.loginFunction(webDriver, user, password);
 		} catch (Exception e) {

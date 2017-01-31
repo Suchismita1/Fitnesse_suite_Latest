@@ -37,7 +37,7 @@ public class LocalBrowserManager {
 	}
 	public static WebDriver startChromeDriver(String browser) {
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "D:\\testdriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/testdriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		return driver;
 		
